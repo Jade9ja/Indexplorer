@@ -5,19 +5,19 @@ function setFiletype(fileType, buttonName) {
     }
     switch(buttonName) {
         case 'TV/Movies':
-            $("#inputone").prop('placeholder',defaultplaceholder+' eg. Lost s01');
+            $("#inputone").prop('placeholder',defaultplaceholder+' eg. Flash S06');
             break;
         case 'Music':
-            $("#inputone").prop('placeholder',defaultplaceholder+' eg. Eminem discography');
+            $("#inputone").prop('placeholder',defaultplaceholder+' eg. Fatrat Monody');
             break;
         case 'Books':
-            $("#inputone").prop('placeholder',defaultplaceholder+' eg. Alice in Wonderland');
+            $("#inputone").prop('placeholder',defaultplaceholder+' eg. Young Samurai');
             break;
         case 'Images':
-               $("#inputone").prop('placeholder',defaultplaceholder+' eg. Megan Fox');
+               $("#inputone").prop('placeholder',defaultplaceholder+' eg. Emma Watson');
                break;
         case 'Software/Games':
-            $("#inputone").prop('placeholder',defaultplaceholder+' eg. Counter Strike');
+            $("#inputone").prop('placeholder',defaultplaceholder+' eg. Red Dead Redemption 2');
             break;
         case 'Other':
             $("#inputone").prop('placeholder',defaultplaceholder);
