@@ -1,0 +1,56 @@
+body {
+    overflow-anchor: none;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+.col-lg-6 {
+    margin: auto;
+}
+
+.jumbotron {
+    background-color: white;
+    color: black;
+}
+
+.jumbodark {
+    background-color: #121212;
+    color: white;
+}
+
+.input-group.mb-3 {
+    width: 85%;
+    margin: auto;
+}
+
+.gobtn {
+    padding-left: 3px;
+}
+
+.heading {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    
+}
+
+.darktogglebtn {
+    margin: auto 0;
+}
+
+.btn.btn-outline-secondary.dropdown-toggle {
+    background-color: #6c757d;
+    color: white;
+}
+
+#original {
+    text-align: center;
+}
+
+
+

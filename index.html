@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Indexplorer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div class="heading">
+        <div class="jumbotron jumbotron-fluid" id="jumbotron">
+            <div class="container">
+              <h1 class="display-4">Indexplorer</h1>
+              <p class="lead">Not an original idea</p>
+            </div>
+          </div>
+    </div>
+
+    <div class="searchbox" >
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" id="ddbtn" aria-haspopup="true" aria-expanded="false">Select file type</button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#" onclick="setFiletype('mkv|mp4|avi|mov|mpg|wmv', 'TV/Movies')"> TV/Movies/Video</a>
+                        <a class="dropdown-item" href="#" onclick="setFiletype('MOBI|CBZ|CBR|CBC|CHM|EPUB|FB2|LIT|LRF|ODT|PDF|PRC|PDB|PML|RB|RTF|TCR|DOC|DOCX', 'Books')"> Books</a>
+                        <a class="dropdown-item" href="#" onclick="setFiletype('mp3|wav|ac3|ogg|flac|wma|m4a', 'Music')"> Music</a>
+                        <a class="dropdown-item" href="#" onclick="setFiletype('exe|iso|tar|rar|zip|apk', 'Software/Games')"> Software/Games</a>
+                        <a class="dropdown-item" href="#" onclick="setFiletype('jpg|png|bmp|gif|tif|tiff|psd', 'Images')"> Images</a>
+                        <a class="dropdown-item" href="#" onclick="setFiletype('-1', 'Other')"> Other</a>
+                      </div>
+                    </div>
+                    <input type="text" id="inputone" class="form-control" aria-label="Text input with dropdown button" placeholder="Search anything">
+                    <div class="gobtn">
+                    <button type="button" class="btn btn-primary" id="holder" onclick="searchquery()" value="">Go!</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="darktogglebtn" align=center>
+      <button type="button" class="btn btn-dark" onclick="darkmodetoggle()"> Toggle Dark</button>
+    </div>
+
+    <footer class="footer mt-auto py-3" id="original">
+      <div class="container">
+        <span class="text-muted">Original idea can be found <a href="https://filechef.com">here</a>.</span>
+      </div>
+    </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+</body>
+</html>
